@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background_register1Activity"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/blur_background" >
+
+
+    <ScrollView
+        android:id="@+id/scrollView_register1Activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/scrollableLinearLayout_register1Activity"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp" >
+
+            <TextView
+                android:id="@+id/tvName_register1Activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fieldTitle_textSize"
+                android:textColor="@color/white_colour"
+                android:textStyle="bold"
+                android:text="@string/nameField_string"/>
+
+            <EditText
+                android:id="@+id/etName_register1Activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white_colour" />
+
+            <TextView
+                android:id="@+id/tvEmail_register1Activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fieldTitle_textSize"
+                android:text="@string/emailField_string"
+                android:textColor="@color/white_colour"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etEmail_register1Activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white_colour" />
+
+            <TextView
+                android:id="@+id/tvUsername_register1Activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fieldTitle_textSize"
+                android:text="@string/usernameField_string"
+                android:textColor="@color/white_colour"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etUsername_register1Activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white_colour" />
+
+            <TextView
+                android:id="@+id/tvPass_register1Activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fieldTitle_textSize"
+                android:text="@string/passwordField_string"
+                android:textColor="@color/white_colour"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etPass_register1Activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:password="true"
+                android:textColor="@color/white_colour" />
+
+            <TextView
+                android:id="@+id/tvConfrmPass_register1Activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fieldTitle_textSize"
+                android:text="@string/confirmPassword_string"
+                android:textColor="@color/white_colour"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etConfirmPass_register1Activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:password="true"
+                android:textColor="@color/white_colour" />
+
+            <Button
+                android:id="@+id/btnContinue_register1Activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_outline_text_button"
+                android:textColor="@color/white_colour"
+                android:text="@string/continueButton_string"
+                android:layout_gravity="center_horizontal"
+                android:onClick="onButtonClick"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background_register3Activity"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/blur_background" >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView_register3Activity" >
+
+        <LinearLayout
+            android:id="@+id/scrollableLinearLayout_register3Activity"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp" >
+
+            <TextView
+                android:id="@+id/tvTemperature_register3Activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fieldTitle_textSize"
+                android:textColor="@color/white_colour"
+                android:textStyle="bold"
+                android:text="@string/tempField_string" />
+
+            <EditText
+                android:id="@+id/etTemperature_register3Activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:textColor="@color/white_colour"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/tvLowBloodPressure_register3Activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fieldTitle_textSize"
+                android:textColor="@color/white_colour"
+                android:textStyle="bold"
+                android:text="@string/bloodPressureLow_string" />
+
+            <EditText
+                android:id="@+id/etLowBloodPressure_register3Activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white_colour"
+                android:inputType="phone" />
+
+            <TextView
+                android:id="@+id/tvHighBloodPressure_register3Activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fieldTitle_textSize"
+                android:textColor="@color/white_colour"
+                android:textStyle="bold"
+                android:text="@string/bloodPressureHigh_string" />
+
+            <EditText
+                android:id="@+id/etHighBloodPressure_register3Activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white_colour"
+                android:inputType="phone" />
+
+            <TextView
+                android:id="@+id/tvHeartRate_register3Activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fieldTitle_textSize"
+                android:textColor="@color/white_colour"
+                android:textStyle="bold"
+                android:text="@string/heartRate_string" />
+
+            <EditText
+                android:id="@+id/etHeartRate_register3Activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white_colour"
+                android:inputType="phone" />
+
+            <Button
+                android:id="@+id/btnSignUp_register3Activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/signUpButton_string"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/blue_text_button"
+                android:textColor="@color/white_colour"
+                android:onClick="onButtonClick"
+                android:layout_marginTop="40dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

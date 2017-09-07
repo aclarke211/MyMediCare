@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background_editDetailsActivity"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/blur_background">
+
+    <ScrollView
+        android:id="@+id/scrollView_editDetailsActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/changableBackgroundLayout_editDetailsActivity"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="@drawable/white_background"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:id="@+id/fieldsContainer_editDetailsActivity"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvAge_editDetailsActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/ageField_string" />
+
+                <EditText
+                    android:id="@+id/etAge_editDetailsActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:id="@+id/tvAddress_editDetailsActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/addressField_string" />
+
+                <EditText
+                    android:id="@+id/etAddress_editDetailsActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvGpName_editDetailsActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/gpNameField_string" />
+
+                <EditText
+                    android:id="@+id/etGpName_editDetailsActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:id="@+id/tvGpNumber_editDetailsActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/gpNumberField_string" />
+
+                <EditText
+                    android:id="@+id/etGpNumber_editDetailsActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:hint="@string/contactNumberHint_string" />
+
+                <Button
+                    android:id="@+id/btnContacts_editDetailsActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contactsButton_string"
+                    android:background="@drawable/blue_text_button"
+                    android:textColor="@color/white_colour"
+                    android:onClick="onButtonClick" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buttonsContainer_editDetailsActivity"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="5dp">
+
+                <Button
+                    android:id="@+id/btnConfirm_editDetailsActivity"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/confirmButton_string"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/green_opacity_text_button"
+                    android:textColor="@color/white_colour"
+                    android:textStyle="bold"
+                    android:onClick="onButtonClick" />
+
+                <Button
+                    android:id="@+id/btnBack_editDetailsActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancelButton_string"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/black_text_button"
+                    android:onClick="onButtonClick"
+                    android:layout_marginTop="15dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

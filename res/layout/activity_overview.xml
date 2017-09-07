@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background_overviewActivity"
+    android:orientation="vertical"
+    android:layout_width="fill_parent" android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/blur_background" >
+
+
+    <LinearLayout
+        android:id="@+id/changableBackgroundLayout_overviewActivity"
+        android:background="@drawable/white_background"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/usernameTextContainer_overviewActivity">
+
+            <TextView
+                android:id="@+id/tvDisplayUsername_overviewActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/usernameText_string"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/tvDisplayAge_overviewActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ageText_string"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/valuesTable_overviewActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_marginTop="5dp">
+
+            <TableRow
+                android:id="@+id/trTemp_overviewActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginBottom="5dp">
+
+
+                <TextView
+                    android:id="@+id/tvTemp_overviewActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize = "16sp"
+                    android:text="@string/temperatureText_string"
+                    android:paddingLeft="10sp" />
+
+                <TextView
+                    android:id="@+id/tvDisplayTemperature_overviewActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/defaultValue"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="25dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/trLowBp_overviewActivity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginBottom="5dp" >
+
+                <TextView
+                    android:id="@+id/tvLowBp_overviewActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize = "16sp"
+                    android:text="@string/lowBloodPressureText_string"
+                    android:paddingLeft="10sp" />
+
+                <TextView
+                    android:id="@+id/tvDisplayLowBp_overviewActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/defaultValue"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="25dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/trHighBp_overviewActivity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginBottom="5dp" >
+
+                <TextView
+                    android:id="@+id/tvHighBp_overviewActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize = "16sp"
+                    android:text="@string/highBloodPressureText_string"
+                    android:paddingLeft="10sp" />
+
+                <TextView
+                    android:id="@+id/tvDisplayHighBp_overviewActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/defaultValue"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="25dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/trHeartRate_overviewActivity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginBottom="5dp" >
+
+                <TextView
+                    android:id="@+id/tvHeartRate_overviewActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize = "16sp"
+                    android:text="@string/heartRateText_string"
+                    android:paddingLeft="10sp" />
+
+                <TextView
+                    android:id="@+id/tvDisplayHeartRate_overviewActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/defaultValue"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="25dp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/statusTextContainer_overviewActivity"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/tvRiskStatusText_overviewActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/riskStatusText_string"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_marginLeft="50sp"
+                android:layout_marginRight="50sp" />
+
+            <TextView
+                android:id="@+id/tvUserHintText__overviewActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/userHintDefaultText_string"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_marginLeft="50sp"
+                android:layout_marginRight="50sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonsContainer_overviewActivity"
+            android:weightSum="3"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <Button
+                android:id="@+id/btnContactGp_overviewActivity"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/contactGPBtnText_string"
+                android:background="@drawable/blue_text_button"
+                android:textColor="@color/white_colour"
+                android:onClick="onButtonClick"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp" />
+
+            <Button
+                android:id="@+id/btnUpdateValues_overviewActivity"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/updateValuesBtnText_string"
+                android:background="@drawable/blue_text_button"
+                android:textColor="@color/white_colour"
+                android:onClick="onButtonClick"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp" />
+
+            <Button
+                android:id="@+id/btnEditDetails_overviewActivity"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/editDetailsBtnText_string"
+                android:background="@drawable/blue_text_button"
+                android:textColor="@color/white_colour"
+                android:onClick="onButtonClick"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

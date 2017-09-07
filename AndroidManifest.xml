@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.aclarke211.mymedicare" >
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/title_loginActivity_string" >
+        </activity>
+        <activity
+            android:name=".Register1"
+            android:label="@string/title_registerActivity_string" >
+        </activity>
+        <activity
+            android:name=".Overview"
+            android:label="@string/title_overviewActivity_string" >
+        </activity>
+        <activity
+            android:name=".Register2"
+            android:label="@string/title_register2Activity_string" >
+        </activity>
+        <activity
+            android:name=".Register3"
+            android:label="@string/title_register3Activity_string" >
+        </activity>
+        <activity
+            android:name=".EditDetails"
+            android:label="@string/title_editDetailsActivity_string" >
+        </activity>
+        <activity
+            android:name=".UpdateValues"
+            android:label="@string/title_updateValuesActivity_string" >
+        </activity>
+        <activity
+            android:name=".MessageGP"
+            android:label="@string/title_messageGpActivity_string" >
+        </activity>
+        <activity
+            android:name=".ChangeBackground"
+            android:label="@string/title_changeBackgroundActivity_string" >
+        </activity>
+    </application>
+
+</manifest>

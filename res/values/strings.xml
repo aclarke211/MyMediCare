@@ -1,0 +1,86 @@
+<resources>
+    <!-- name of application -->
+    <string name="app_name">MyMediCare</string>
+
+    <!-- menu names -->
+    <string name="menu_logout_string">Logout</string>
+    <string name="menu_changeBackground_string">Background Colour</string>
+
+    <!-- title for each activity -->
+    <string name="title_loginActivity_string">Login</string>
+    <string name="title_registerActivity_string">Register 1</string>
+    <string name="title_overviewActivity_string">Overview</string>
+    <string name="title_register2Activity_string">Register 2</string>
+    <string name="title_register3Activity_string">Register 3</string>
+    <string name="title_editDetailsActivity_string">Edit Details</string>
+    <string name="title_updateValuesActivity_string">Update Values</string>
+    <string name="title_messageGpActivity_string">Message GP</string>
+    <string name="title_changeBackgroundActivity_string">Change Background Colour</string>
+
+    <!-- text for buttons -->
+    <string name="signInButton_string">Sign In</string>
+    <string name="loginButton_string">Login</string>
+    <string name="registerButton_string">Register</string>
+    <string name="newUserButton_string">New User? Register Here</string>
+    <string name="continueButton_string">Continue</string>
+    <string name="contactsButton_string">Contacts</string>
+    <string name="signUpButton_string">Sign Up</string>
+    <string name="sendTextButton_string">Send Text</string>
+    <string name="backButton_string">Back</string>
+    <string name="confirmButton_string">Confirm</string>
+    <string name="cancelButton_string">Cancel</string>
+
+    <!-- main activity text -->
+    <string name="welcomeMessage_string">Welcome</string>
+
+    <!-- register1 activity text -->
+    <!-- underlined field titles -->
+    <string name="nameField_string"><u>Name</u></string>
+    <string name="emailField_string"><u>E-mail Address</u></string>
+    <string name="usernameField_string"><u>Username</u></string>
+    <string name="passwordField_string"><u>Password</u></string>
+    <string name="confirmPassword_string"><u>Confirm Password</u></string>
+
+    <!-- register2 activity text -->
+    <!-- underlined field titles -->
+    <string name="ageField_string"><u>Age</u></string>
+    <string name="addressField_string"><u>Address</u></string>
+    <string name="gpNameField_string"><u>GP Name</u></string>
+    <string name="gpNumberField_string"><u>GP Number</u></string>
+    <string name="contactNumberHint_string">Enter number or select from contacts</string>
+
+    <!-- register3 activity text -->
+    <!-- underlined field titles -->
+    <string name="tempField_string"><u>Temp (°C)</u></string>
+    <string name="bloodPressureLow_string"><u>Blood Pressure (Low Value)</u></string>
+    <string name="bloodPressureHigh_string"><u>Blood Pressure (High Value)</u></string>
+    <string name="heartRate_string"><u>Heart Rate (BPM)</u></string>
+
+    <!-- overview activity -->
+    <string name="defaultValue">99</string>
+    <string name="usernameText_string">Username</string>
+    <string name="ageText_string">Age:</string>
+    <string name="temperatureText_string">Temperature:</string>
+    <string name="lowBloodPressureText_string">Blood Pressure (Low Value):</string>
+    <string name="highBloodPressureText_string">Blood Pressure (High Value):</string>
+    <string name="heartRateText_string">Heart Rate (BPM):</string>
+    <string name="riskStatusText_string">Risk Status</string>
+    <string name="userHintDefaultText_string">Message for User</string>
+
+    <string name="contactGPBtnText_string">Contact GP</string>
+    <string name="updateValuesBtnText_string">Update Values</string>
+    <string name="editDetailsBtnText_string">Edit Personal Details</string>
+
+    <!-- message GP activity -->
+    <string name="gpNameText_string">GP Name:</string>
+    <string name="gpNumberText_string">GP Number:</string>
+    <string name="enterMessageText_string"><u>Enter Message:</u></string>
+    <string name="messageHintText_string">Specify your current health status...</string>
+
+    <!-- change background activity -->
+    <string name="changeBackgroundMessage_string">Please choose a colour for the background...</string>
+    <string name="blueColourButton_string">Blue</string>
+    <string name="yellowColourButton_string">Yellow</string>
+    <string name="whiteColourButton_string">White</string>
+
+</resources>

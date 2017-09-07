@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white_colour">#ffffff</color>
+    <color name="black_colour">#000000</color>
+    <color name="greyMed_colour">#e6e6e6</color>
+    <color name="blueMed_colour">#51a5ed</color>
+    <color name="greenLight_colour">#9dd79c</color>
+    <color name="greenMed_colour">#7bc679</color>
+    <color name="greenDark_colour">#5d8e5b</color>
+    <color name="greenStatus_colour">#99e680</color>
+    <color name="orangeLight_colour">#ffd189</color>
+    <color name="orangeMed_colour">#ffbd55</color>
+    <color name="orangeDark_colour">#ffa41a</color>
+    <color name="orangeStatus_colour">#ffa347</color>
+    <color name="redLight_colour">#f1b4b4</color>
+    <color name="redMed_colour">#f17d7d</color>
+    <color name="redDark_colour">#e15c5c</color>
+    <color name="redStatus_colour">#ff4747</color>
+
+    <!-- background colours -->
+    <!-- RGBA colours allow for opacity setting (first two numbers in hex code) -->
+    <color name="whiteBackground_colour">#99ffffff</color>
+    <color name="blueBackground_colour">#9982e6ff</color>
+    <color name="yellowBackground_colour">#99ffff9d</color>
+
+    <color name="greenTextButtonBackground_colour">#999dd79c</color>
+</resources>

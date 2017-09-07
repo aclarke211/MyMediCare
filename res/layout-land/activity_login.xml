@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:id="@+id/background_loginActivity"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/landscape_blur_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout_loginActivity"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp">
+
+        <LinearLayout
+            android:id="@+id/fieldsContainer_loginActivity"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvUsername_loginActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fieldTitle_textSize"
+                android:text="@string/usernameField_string"
+                android:textColor="@color/white_colour"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etUsername_loginActivity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white_colour" />
+
+            <TextView
+                android:id="@+id/tvPassword_loginActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fieldTitle_textSize"
+                android:text="@string/passwordField_string"
+                android:textColor="@color/white_colour"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etPassword_loginActivity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@color/white_colour" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonContainer_loginActivity"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+
+            <Button
+                android:id="@+id/btnRegister_loginActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/newUserButton_string"
+                android:onClick="onButtonClick"
+                android:background="@drawable/blue_text_button"
+                android:textColor="@color/white_colour"
+                android:padding="8dp" />
+
+            <Button
+                android:id="@+id/btnLogin_loginActivity"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/loginButton_string"
+                android:onClick="onButtonClick"
+                android:background="@drawable/green_outline_text_button"
+                android:textColor="@color/white_colour"
+                android:layout_marginLeft="210dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

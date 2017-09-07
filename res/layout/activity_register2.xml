@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background_register2Activity"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/blur_background" >
+
+    <ScrollView
+        android:id="@+id/scrollView_register2Activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/scrollableLinearLayout_register2Activity"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp" >
+
+            <TextView
+                android:id="@+id/tvAge_register2Activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fieldTitle_textSize"
+                android:textColor="@color/white_colour"
+                android:textStyle="bold"
+                android:text="@string/ageField_string" />
+
+            <EditText
+                android:id="@+id/etAge_register2Activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="@color/white_colour"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/tvAddress_register2Activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fieldTitle_textSize"
+                android:textColor="@color/white_colour"
+                android:textStyle="bold"
+                android:text="@string/addressField_string" />
+
+            <EditText
+                android:id="@+id/etAddress_register2Activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white_colour"/>
+
+            <TextView
+                android:id="@+id/tvGpName_register2Activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fieldTitle_textSize"
+                android:textColor="@color/white_colour"
+                android:textStyle="bold"
+                android:text="@string/gpNameField_string" />
+
+            <EditText
+                android:id="@+id/etGpName_register2Activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white_colour"/>
+
+            <TextView
+                android:id="@+id/tvGpNumber_register2Activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fieldTitle_textSize"
+                android:textColor="@color/white_colour"
+                android:textStyle="bold"
+                android:text="@string/gpNumberField_string" />
+
+            <EditText
+                android:id="@+id/etGpNumber_register2Activity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:hint="@string/contactNumberHint_string"
+                android:textColorHint="@color/greyMed_colour"
+                android:textColor="@color/white_colour" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contactsButton_string"
+                android:id="@+id/btnContacts_register2Activity"
+                android:background="@drawable/blue_text_button"
+                android:textColor="@color/white_colour"
+                android:layout_marginTop="10dp"
+                android:onClick="onButtonClick" />
+
+            <Button
+                android:id="@+id/btnContinue_register2Activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/continueButton_string"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/green_outline_text_button"
+                android:textColor="@color/white_colour"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:onClick="onButtonClick" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

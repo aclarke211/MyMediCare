@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:id="@+id/background_mainActivity"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/landscape_main_background" >
+
+    <LinearLayout
+        android:id="@+id/mainContainer_mainActivity"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        android:paddingTop="30dp">
+
+        <LinearLayout
+            android:id="@+id/logoContainer_mainActivity"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivLogo_mainActivity"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_above="@+id/tvWelcomeHome"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/logo"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tvWelcome_mainActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="32dp"
+                android:text="@string/welcomeMessage_string"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white_colour"
+                android:layout_weight="1"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonsContainer_mainActivity"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="80dp">
+
+            <Button
+                android:id="@+id/btnLogin_mainActivity"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@string/signInButton_string"
+                android:layout_below="@+id/tvWelcomeHome"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:onClick="onButtonClick"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/white_border_button"
+                android:textColor="@color/white_colour"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnRegister_mainActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/registerButton_string"
+                android:onClick="onButtonClick"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/blue_text_button"
+                android:textColor="@color/white_colour" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

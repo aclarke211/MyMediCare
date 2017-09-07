@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- used for the TextViews located above EditTexts in login, register layouts etc. -->
+    <dimen name="fieldTitle_textSize">22dp</dimen>
+    <dimen name="healthValues_textSize">22dp</dimen>
+
+    <!-- layouts -->
+    <dimen name="roundedCorners_layoutsSize">25dp</dimen>
+    <dimen name="borderStroke_layoutsSize">5dp</dimen>
+
+    <!-- health values -->
+    <dimen name="roundedCorners_healthValuesSize">5dp</dimen>
+
+</resources>
